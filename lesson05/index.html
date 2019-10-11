@@ -3,10 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>My Bank</title>
+    <style>
+      div {
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+        width: 100px;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Welcome to My Bank</h1>
+    <p>Thank you for trusting us with your money!</p>
+    <p>We want to provide you with excellent customer service, so let us know how we can help.</p>
+    <p>Please use our online ATM application to make a deposit (D), withdraw funds (W), or check your balance (B). You may enter Q to quit the ATM.</p>
+    <div onclick="atm()" class="bank_button" border-width: 1px;>Press here for ATM</div>
 
     <script src="./java.js" charset="utf-8"></script>
   </body>
