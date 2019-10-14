@@ -11,10 +11,16 @@ function atm() {
     switch(service) {
       case 'D': {
         prompt('Please enter the amount you want to deposit.');
+        **function prompt(x) {
+          let total += x;
+        }**
         break;
       }
       case 'W': {
         prompt('Please enter the amount you want to withdraw.');
+        **function prompt(x) {
+          let total -= x;
+        }**
         break;
       }
       case 'B': {
