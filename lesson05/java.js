@@ -1,5 +1,6 @@
 let total = 0;
 
+
 function atm() {
   let i = 0;
   while (i < 5) {
@@ -11,16 +12,10 @@ function atm() {
     switch(service) {
       case 'D': {
         prompt('Please enter the amount you want to deposit.');
-        **function prompt(x) {
-          let total += x;
-        }**
         break;
       }
       case 'W': {
-        prompt('Please enter the amount you want to withdraw.');
-        **function prompt(x) {
-          let total -= x;
-        }**
+        prompt('Please enter the amount you want to withdraw.')
         break;
       }
       case 'B': {
