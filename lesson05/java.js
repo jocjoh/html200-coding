@@ -1,9 +1,17 @@
 let total = 0;
 
+function deposit(x) {
+  total += x;
+}
+
+function withdrawl(x) {
+  total -= x;
+}
+
 
 function atm() {
   let i = 0;
-  while (i < 5) {
+  while (i < 10) {
     let service = prompt('Please enter a command.', 'D, W, B, or Q');
     if (service === 'Q') {
       alert('Goodbye!');
@@ -11,11 +19,13 @@ function atm() {
     }
     switch(service) {
       case 'D': {
-        prompt('Please enter the amount you want to deposit.');
+        let input = prompt('Please enter the amount you want to deposit.')
+        deposit(input);
         break;
       }
       case 'W': {
-        prompt('Please enter the amount you want to withdraw.')
+        let input = prompt('Please enter the amount you want to withdraw.')
+        withdrawl(input);
         break;
       }
       case 'B': {
