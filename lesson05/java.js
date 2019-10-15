@@ -1,11 +1,11 @@
 let total = 0;
 
 function deposit(x) {
-  total += x;
+  total += Number(x);
 }
 
 function withdrawl(x) {
-  total -= x;
+  total -= Number(x);
 }
 
 
@@ -29,7 +29,7 @@ function atm() {
         break;
       }
       case 'B': {
-        alert('Your balance is ' + total);
+        alert('Your balance is ' + Number(total));
         break;
       }
       default: {
